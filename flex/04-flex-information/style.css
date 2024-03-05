@@ -5,11 +5,26 @@ body {
 img {
   width: 100px;
   height: 100px;
+  display: flex;
+}
+
+.text{
+  display: flex;
+}
+
+.fruits{
+  display: flex;
+  gap: 52px;
+  align-items: flex-end;
+  
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
 }
 
 /* do not edit this footer */

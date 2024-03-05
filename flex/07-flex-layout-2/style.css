@@ -8,12 +8,16 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  font-size: 16px;
+  padding: 16px 0px;
 }
 
 .sidebar {
@@ -26,4 +30,71 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: white;
+} 
+
+ul{
+  list-style-type: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.middle{
+  display: flex;
+  flex-grow: 1;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 16px;
+}
+
+.card{
+  height: 200px;
+  width: 400px;
+}
+
+.sidebar{
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.sidebar > ul{
+  padding: 0 20px;
+}
+
+.sidebar > ul > li{
+  padding: 10px;
+  font-size: 24px;
+}
+
+
+
+
+
+
+.footer{
+  display: flex;
+  background-color: #eeeeee;
+  padding: 5px;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
 }
